@@ -1,0 +1,74 @@
+body
+{
+    font-family: 'Roboto', 'Noto', sans-serif;
+}
+
+.login-form {
+  text-align: center;
+  width: 80%;
+  margin: 60px auto 0;
+}
+
+input[type=email], input[type=password] {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.login-button {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.forgot-password {
+  display: block;
+  margin: 8px auto 0 auto;
+  font-size: 14px;
+}
+
+.ordevide {
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    color: #496f23;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.ordevide .devide
+{
+    width: 100%;
+    border-top: 1px solid;
+    margin-top: 7px;
+}
+
+.app-card {
+    
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 8px;
+    background-color: transparent;
+}
+
+.app-logo-login{
+  height: auto;
+  width: 144px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 1px solid white;
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+}
+
+.app-name
+{
+  margin: 20px 0 0 0;
+  font-weight: 600;
+  font-size: 20px;  
+  color: #496f23;
+  font-weight: bold; 
+}
