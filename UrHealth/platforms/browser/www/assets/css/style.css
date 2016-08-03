@@ -154,34 +154,39 @@ input[type=name]:first-child
 {    
      width: 100%;
     margin: auto;
-    margin-top: 5px;
-   
 }
 
 .main-grid .item-content
 {
-      width: 97%;
-     height: 132px; 
+     width: 100%;
+     height: 100%; 
     text-align: center;
-    border: 1px solid #009a9a;
     /* -webkit-border-radius: 50%; */
     margin: auto;
-    -webkit-transition: background .4s linear;
-    -moz-transition: background .4s linear;
-    -o-transition: background .4s linear;
-    -ms-transition: background .4s linear;
-    transition: background .4s linear;
-        border-radius: 2px;
+    -webkit-transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -o-transition: color .4s linear;
+    -ms-transition: color .4s linear;
+    transition: color .4s linear;
+    border-radius: 2px;
+}
+
+.main-grid .item-content .og-content
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height: 76px;
 }
 
 .item-content:hover
 {
-     background: #009a9a !important;
+     color: #009a9a !important;
 }
 
 .main-grid .row-grid
 {
-   margin-bottom:4px;
+   height: 25%;
 }
 
 
@@ -192,11 +197,67 @@ input[type=name]:first-child
     font-size: 13px;
     font-family: 'Roboto', 'Noto', sans-serif;
     margin-top:10px;
-    text-shadow: 1px 1px 1px #009a9a;
 }
 .main-grid ons-icon
 {
     opacity: 0.9;
     color: white;
     padding-top: 36px;
+}
+
+.ico-run
+{
+    background: url("../../assets/img/icons/run.png");
+    height: 45px;
+    width: 40px;
+    margin: auto;
+}
+.ico-workout
+{
+    background: url("../../assets/img/icons/workout.png");
+    height: 47px;
+    width: 40px;
+    margin: auto;
+}
+.ico-friends
+{
+    background: url("../../assets/img/icons/friends.png");
+    height: 37px;
+    width: 40px;
+    margin: auto;
+}
+.ico-profile
+{
+    background: url("../../assets/img/icons/profile.png");
+    height: 47px;
+    width: 40px;
+    margin: auto;
+}
+.ico-recipe
+{
+    background: url("../../assets/img/icons/recipe.png");
+    height: 29px;
+    width: 40px;
+    margin: auto;
+}
+.ico-programs
+{
+    background: url("../../assets/img/icons/programs.png");
+    height: 40px;
+    width: 40px;
+    margin: auto;
+}
+.ico-building
+{
+    background: url("../../assets/img/icons/building.png");
+    height: 31px;
+    width: 40px;
+    margin: auto;
+}
+.ico-appoinment
+{
+    background: url("../../assets/img/icons/appoinment.png");
+    height: 40px;
+    width: 40px;
+    margin: auto;
 }
