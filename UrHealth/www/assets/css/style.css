@@ -1,15 +1,16 @@
 body
 {
     font-family: 'Roboto', 'Noto', sans-serif;
+    color:#b2bbc4;
 }
 
-.login-form {
+.login-form,.signup-form {
   text-align: center;
   width: 80%;
   margin: 60px auto 0;
 }
 
-input[type=email], input[type=password] {
+input[type=email], input[type=password], input[type=name],input[type=number]{
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -18,6 +19,22 @@ input[type=email], input[type=password] {
   padding-bottom: 24px;
 }
 
+input[type=name]
+{
+    width: 48%;
+    float: left;
+}
+
+input[type=name]:first-child
+{
+  margin-right: 4%;
+}
+
+.button-bar
+{
+    margin-top: 24px !important;
+    width: 100% !important;
+}
 .login-button {
   width: 100%;
   margin: 0 auto;
@@ -27,6 +44,7 @@ input[type=email], input[type=password] {
   display: block;
   margin: 8px auto 0 auto;
   font-size: 14px;
+  color:#b2bbc4;
 }
 
 .ordevide {
@@ -34,7 +52,7 @@ input[type=email], input[type=password] {
     font-size: 14px;
     text-transform: uppercase;
     font-family: 'Roboto', 'Noto', sans-serif;
-    color: #496f23;
+    color: #b2bbc4;
     margin-top: 9px;
     margin-bottom: 9px;
 }
@@ -49,19 +67,17 @@ input[type=email], input[type=password] {
     
     width: 100%;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 8px;
+    margin-top: 6%;
     background-color: transparent;
 }
 
 .app-logo-login{
-  height: auto;
-  width: 144px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border: 1px solid white;
-  box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
-  -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+
+    height: auto;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: rgba(232, 232, 232, 0.58) 0px 2px 0px 0px;
 }
 
 .app-name
@@ -69,6 +85,118 @@ input[type=email], input[type=password] {
   margin: 20px 0 0 0;
   font-weight: 600;
   font-size: 20px;  
-  color: #496f23;
+  color: #ffffff;
   font-weight: bold; 
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #282829;
+    opacity: 0.4;
+    display: none;
+}
+
+.double-bounce1, .double-bounce2 {
+   width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #c9cbcd;
+    opacity: 0.6;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.unknown-profile
+{
+    height: auto;
+    width: 71px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 6px solid #009a9a;
+    padding: 9px;
+}
+
+.second-step{display: none;}
+
+.card-mini
+{
+  margin-top: 18%;
+}
+
+.main-grid
+{    
+     width: 100%;
+    margin: auto;
+    margin-top: 5px;
+   
+}
+
+.main-grid .item-content
+{
+      width: 97%;
+     height: 132px; 
+    text-align: center;
+    border: 1px solid #009a9a;
+    /* -webkit-border-radius: 50%; */
+    margin: auto;
+    -webkit-transition: background .4s linear;
+    -moz-transition: background .4s linear;
+    -o-transition: background .4s linear;
+    -ms-transition: background .4s linear;
+    transition: background .4s linear;
+        border-radius: 2px;
+}
+
+.item-content:hover
+{
+     background: #009a9a !important;
+}
+
+.main-grid .row-grid
+{
+   margin-bottom:4px;
+}
+
+
+
+.main-grid .item-content h5
+{
+    color: white;
+    font-size: 13px;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    margin-top:10px;
+    text-shadow: 1px 1px 1px #009a9a;
+}
+.main-grid ons-icon
+{
+    opacity: 0.9;
+    color: white;
+    padding-top: 36px;
 }

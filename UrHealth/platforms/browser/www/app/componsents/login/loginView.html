@@ -1,15 +1,24 @@
-<ons-page>
-      <ons-toolbar>
-        <div class="center">Log In</div>
-      </ons-toolbar>
-
+  <ons-page>
+      <div class="app-card">
+         <img src="assets/img/logo_circle.png" class="app-logo-login">
+         <div class="app-name">UrHealth</div>
+      </div>
       <div class="login-form">
-
-        <input type="email" class="text-input--underbar" placeholder="Email" value="">
+        <input type="email" class="text-input--underbar" placeholder="User Name" value="">
         <input type="password" class="text-input--underbar" placeholder="Password" value="">
         <br><br>
         <ons-button modifier="large" class="login-button">Log In</ons-button>
+        <ons-row class="ordevide">
+          <ons-col width="43%"><div class="devide"></div></ons-col> 
+          <ons-col width="14%">OR</ons-col>
+          <ons-col width="43%"><div class="devide"></div></ons-col> 
+        </ons-row>
+        <ons-button modifier="large" class="login-button">Create an Account</ons-button>
         <br><br>
         <ons-button modifier="quiet" class="forgot-password">Forgot password?</ons-button>
       </div>
-</ons-page>
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+  </ons-page>

@@ -10,7 +10,7 @@
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="assets/libs/onsen/css/onsenui.css">
     <link rel="stylesheet" href="assets/libs/onsen/css/onsen-css-components.css">
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- JS dependencies -->
     <script src="assets/libs/onsen/js/onsenui.js"></script>
     <script src="assets/libs/angular/angular.min.js"></script>
@@ -18,25 +18,73 @@
 </head>
 
 <body>
-    <ons-page>
-      <div class="app-card">
-         <img src="assets/img/logo_circle.png" class="app-logo-login">
-         <div class="app-name">UrHealth</div>
-      </div>
-      <div class="login-form">
-        <input type="email" class="text-input--underbar" placeholder="Email" value="">
-        <input type="password" class="text-input--underbar" placeholder="Password" value="">
-        <br><br>
-        <ons-button modifier="large" class="login-button">Log In</ons-button>
-        <ons-row class="ordevide">
-          <ons-col width="43%"><div class="devide"></div></ons-col> 
-          <ons-col width="14%">OR</ons-col>
-          <ons-col width="43%"><div class="devide"></div></ons-col> 
+     <ons-page>
+       <ons-toolbar>
+          <div class="left">
+            <ons-toolbar-button ng-click="menu.toggleMenu()">
+              <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <div class="center">Title</div>
+        </ons-toolbar>
+    <div class="main-grid">
+        <ons-row class="row-grid">
+            <ons-col width="50%">
+                <div class="item-content">
+                    <ons-icon icon="fa-phone" size="40px"></ons-icon>
+                    <h5>BODYBUILDIND</h5>
+                </div>
+            </ons-col>
+            <ons-col width="50%">
+                <div class="item-content">
+                    <ons-icon icon="fa-user"  size="40px"></ons-icon>
+                    <h5>RUN</h5>
+                </div>
+            </ons-col>
         </ons-row>
-        <ons-button modifier="large" class="login-button">Sign In</ons-button>
-        <br><br>
-        <ons-button modifier="quiet" class="forgot-password">Forgot password?</ons-button>
-      </div>
-  </ons-page>
+             <ons-row class="row-grid">
+            <ons-col width="50%">
+                <div class="item-content">
+                    <ons-icon icon="fa-phone" size="40px"></ons-icon>
+                    <h5>WORKOUT</h5>
+                </div>
+            </ons-col>
+            <ons-col width="50%">
+                <div class="item-content">
+                    <ons-icon icon="fa-user"  size="40px"></ons-icon>
+                    <h5>RECIPES</h5>
+                </div>
+            </ons-col>
+        </ons-row>
+             <ons-row class="row-grid">
+            <ons-col width="50%">
+                <div class="item-content">
+                    <ons-icon icon="fa-phone" size="40px"></ons-icon>
+                    <h5>FRIENDS</h5>
+                </div>
+            </ons-col>
+            <ons-col width="50%">
+                <div class="item-content">
+                    <ons-icon icon="fa-user"  size="40px"></ons-icon>
+                    <h5>PROFILE</h5>
+                </div>
+            </ons-col>
+        </ons-row>
+              <ons-row class="row-grid">
+            <ons-col width="50%">
+                <div class="item-content">
+                    <ons-icon icon="fa-phone" size="40px"></ons-icon>
+                    <h5>PROGRAMS</h5>
+                </div>
+            </ons-col>
+            <ons-col width="50%">
+                <div class="item-content">
+                    <ons-icon icon="fa-user"  size="40px"></ons-icon>
+                    <h5>APPONEMENT</h5>
+                </div>
+            </ons-col>
+        </ons-row>
+    </div>
+</ons-page>
     <script type="text/javascript" src="cordova.js"></script>
 </body>
