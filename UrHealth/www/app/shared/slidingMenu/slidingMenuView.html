@@ -1,0 +1,57 @@
+ <ons-page modifier="menu-page" class="sliding-menu">
+     <div class="bg-sliding-menu"></div>
+     <ons-row class="header-menu">
+         <ons-col width="30%"><img src="assets\img\unknown.png" class="profile-img"/></ons-col>
+         <ons-col width="70%">
+             <div class="user">
+             <span class="tag">Yassine Ouachhal</span><br>
+             <span class="tag"><ons-icon icon="fa-map-marker" size="10px"></ons-icon><span class="localisation">Casablanca, Maroc</span></span>
+             </div>
+      </ons-col>
+     </ons-row>
+     <div class="content-menu">
+        <ons-list class="menu-list">
+            <ons-list-item class="active"  ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-tachometer"></ons-icon>
+            Dashboard
+          </ons-list-item>
+           <ons-list-item ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-user"></ons-icon>
+            Profile
+          </ons-list-item>
+           <ons-list-item ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-user-plus"></ons-icon>
+            Friends<span class="notification">10</span>
+          </ons-list-item>
+           <ons-list-item ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-forumbee"></ons-icon>
+            Bodybuilding
+          </ons-list-item>
+           <ons-list-item ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-deviantart"></ons-icon>
+            Run
+          </ons-list-item>
+           <ons-list-item ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-random"></ons-icon>
+            Workout
+          </ons-list-item>
+           <ons-list-item ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-list-alt"></ons-icon>
+            Recipes
+          </ons-list-item>
+           <ons-list-item class="" ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-line-chart"></ons-icon>
+            Programs
+          </ons-list-item>
+           <ons-list-item class="last-item" ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-clock-o"></ons-icon>
+            Appoinement
+          </ons-list-item>
+          <br>
+           <ons-list-item ng-click="menu.closeMenu()">
+            <ons-icon icon="fa-cog"></ons-icon>
+            Setting
+          </ons-list-item>
+        </ons-list>
+     </div>
+</ons-page>

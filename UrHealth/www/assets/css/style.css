@@ -208,35 +208,35 @@ input[type=name]:first-child
 .ico-run
 {
     background: url("../../assets/img/icons/run.png");
-    height: 45px;
-    width: 40px;
+    height: 40px;
+    width: 39px;
     margin: auto;
 }
 .ico-workout
 {
     background: url("../../assets/img/icons/workout.png");
-    height: 47px;
-    width: 40px;
+    height: 40px;
+    width: 34px;
     margin: auto;
 }
 .ico-friends
 {
     background: url("../../assets/img/icons/friends.png");
-    height: 37px;
+    height: 40px;
     width: 40px;
     margin: auto;
 }
 .ico-profile
 {
     background: url("../../assets/img/icons/profile.png");
-    height: 47px;
-    width: 40px;
+    height: 40px;
+    width: 34px;
     margin: auto;
 }
 .ico-recipe
 {
     background: url("../../assets/img/icons/recipe.png");
-    height: 29px;
+    height: 40px;
     width: 40px;
     margin: auto;
 }
@@ -250,9 +250,10 @@ input[type=name]:first-child
 .ico-building
 {
     background: url("../../assets/img/icons/building.png");
-    height: 31px;
-    width: 40px;
+    height: 39px;
+    width: 43px;
     margin: auto;
+    margin-bottom: 1px;
 }
 .ico-appoinment
 {
@@ -260,4 +261,110 @@ input[type=name]:first-child
     height: 40px;
     width: 40px;
     margin: auto;
+}
+.sliding-menu .page__content
+{
+    background: transparent !important;
+}
+.bg-sliding-menu
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgb(14, 33, 55);
+    z-index: -1;
+}
+.sliding-menu .profile-img
+{
+    height: auto;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.header-menu
+{
+        width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    /* margin-bottom: 14px; */
+    background: rgb(5, 19, 36);
+    height: 64
+}
+
+.header-menu .user
+{
+    position: relative;
+    top: 2px;
+    color: white;
+    font-size: 13px;
+    float: left;
+    line-height: 1.6;
+    width: 100%;
+}
+
+.header-menu .user .tag
+{
+    float:left;
+}
+
+.header-menu .user ons-icon
+{
+  color:#009a9a;
+}
+ons-list-item.active .center list__item__center
+{
+  color:#009a9a;
+}
+
+ons-list-item.active
+{
+    border-right: 3px solid #009a9a;
+    background: rgba(5, 19, 36, 0.43) !important;
+}
+
+
+.header-menu .user .tag .localisation
+{
+    margin-left: 6px;
+    font-size: 10px;
+    color: #d0caca;
+}
+
+.sliding-menu .list__item--material
+{
+    color:white !important;
+}
+
+.sliding-menu  ons-list-item
+{
+    background: transparent;
+}
+
+.list--material
+{
+   background: rgb(14, 33, 55);
+}
+
+.sliding-menu  .list__item__center
+{
+   background-image: none !important;
+   font-size: 13px;
+}
+.content-menu ons-icon
+{
+  margin-right: 16px;
+}
+
+.content-menu
+{
+  margin-top: 12px;
+}
+.notification
+{
+    background: #009090;
+    font-size: 12px;
+    left: 50%;
 }
