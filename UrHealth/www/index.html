@@ -27,11 +27,25 @@
     <ons-navigator id="nav"></ons-navigator>
     <script type="text/javascript" src="cordova.js"></script>
     <script>
+        
         var elm =   document.getElementById("nav");
      elm.pushPage('app/componsents/login/loginView.html');
-     
-     var scipts = document.getElementsByTagName("script");
-     for(var i=0;i<scipts.length;i++) console.log(scipts[i].src);
+        
+      setTimeout(function(){
+         
+  elm.pushPage('app/componsents/home/homeView.html');
+        },2000);
+
+   setTimeout(function(){
+         
+  elm.popPage();
+        },4000);
+
+  setTimeout(function(){
+         
+   elm.pushPage('app/componsents/home/homeView.html');
+        },6000);
+
    
     </script>
 </body>
