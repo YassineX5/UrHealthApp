@@ -1,4 +1,4 @@
-<html ng-app="fitenesse">
+<html ng-app="app" ng-controller="appController">
 <head>
     <title>Fitenesse</title>
     <meta charset="utf-8" />
@@ -13,39 +13,34 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- JS dependencies -->
     <script src="assets/libs/onsen/js/onsenui.js"></script>
-    <script src="assets/libs/angular/angular.min.js"></script>
+    <script src="assets/libs/angular/angular.js"></script>
     <script src="assets/libs/onsen/js/angular-onsenui.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/loader.js"></script>
+   
     
-  
 </head>
 
-<body ng-controller="appController"> 
-    <!--<ons-sliding-menu var="menu" main-page="page.html" menu-page="app\shared\slidingMenu\slidingMenuView.html" max-slide-distance="70%" type="reveal" side="left"></ons-sliding-menu>
-    <ons-template id="page.html">-->
-    <ons-navigator id="nav"></ons-navigator>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script>
-        
-        var elm =   document.getElementById("nav");
-     elm.pushPage('app/componsents/login/loginView.html');
-        
-      setTimeout(function(){
-         
-  elm.pushPage('app/componsents/home/homeView.html');
-        },2000);
+<body>
+    <ons-page id="mainView">
+       <ons-toolbar id="toolbar">
+          <div class="left">
+            <ons-toolbar-button ng-click="menu.toggleMenu()">
+              <ons-icon icon="ion-navicon" size="28px" fixed-width="false" class="lticon"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <div class="center" ><span ng-bind="title">fitensse</span></div>
+        </ons-toolbar>
+        <ons-sliding-menu var="menu" main-page="principal" menu-page="app\shared\slidingMenu\slidingMenuView.html" max-slide-distance="70%" type="reveal" side="left"></ons-sliding-menu>
+        <ons-template id="principal">
+            <ons-navigator var="_navigator"></ons-navigator>
+        </ons-template>
+    </ons-page>
+    <!--<script type="text/javascript" src="cordova.js"></script>-->
 
-   setTimeout(function(){
-         
-  elm.popPage();
-        },4000);
-
-  setTimeout(function(){
-         
-   elm.pushPage('app/componsents/home/homeView.html');
-        },6000);
-
-   
-    </script>
+<script data-main="assets/js/main" src="assets/libs/requirejs/require.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
+<ons-template id="stack">
+ 
+</ons-template>
+
+</html>

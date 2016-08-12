@@ -368,3 +368,11 @@ ons-list-item.active
     font-size: 12px;
     left: 50%;
 }
+.hide
+{
+    display: none;
+}
+.lticon{
+    position: absolute;
+    top: 25%;
+}
